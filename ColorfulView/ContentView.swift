@@ -19,9 +19,9 @@ extension View {
 struct ContentView: View {
     
     var body: some View {
-            ColorfulView()
-                .cornerRadius(10)
-                .ignoresSafeArea()
+        ColorfulView()
+            .cornerRadius(10)
+            .ignoresSafeArea()
     }
 }
 
