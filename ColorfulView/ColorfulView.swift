@@ -56,6 +56,7 @@ public struct ColorfulView: View {
     //MARK: - VIEW
     public var body: some View {
         GeometryReader { reader in
+            Color.black
             ZStack {
                 ForEach(obtainRangeAndUpdate(size: reader.size), id: \.self) { idx in
                     Circle()
@@ -65,14 +66,13 @@ public struct ColorfulView: View {
                                height: randomization[idx].diameter)
                         .offset(x: randomization[idx].offsetX,
                                 y: randomization[idx].offsetY)
+                        .blur(radius: blurRadius)
                     
                 }
             }
             .frame(width: reader.size.width, height: reader.size.height)
-            
         }
         .clipped()
-        .blur(radius: blurRadius)
         .onReceive(timer) { _ in
             dispatchUpdate()
         }

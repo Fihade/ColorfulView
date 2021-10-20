@@ -18,10 +18,16 @@ extension View {
 
 struct ContentView: View {
     
+    @State private var username: String = ""
+    @State private var isEditing = false
+    
     var body: some View {
-        ColorfulView()
-            .cornerRadius(10)
-            .ignoresSafeArea()
+        ZStack {
+            ColorfulView()
+                .cornerRadius(10)
+                .ignoresSafeArea()
+        }
+        
     }
 }
 

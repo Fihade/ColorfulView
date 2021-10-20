@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private let kDefaultSourceColorList = [#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), #colorLiteral(red: 0.6253449321, green: 0, blue: 0.8861384988, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 0.988905251, alpha: 1), #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1)]
+private let kDefaultSourceColorList = [#colorLiteral(red: 0, green: 0.3022235632, blue: 1, alpha: 1), #colorLiteral(red: 0.9707943797, green: 0.5372591615, blue: 0.8695508838, alpha: 1), #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)]
 
 
 public extension ColorfulView {
